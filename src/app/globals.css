@@ -86,3 +86,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.text-block {
+  padding-left: 10%;
+  padding-right: 10%;
+}
