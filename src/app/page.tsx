@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main className="min-h-screen py-20">
-      <div className="w-full max-w-[800px] mx-auto flex flex-col gap-y-20">
+      <div className="w-full max-w-[600px] mx-auto flex flex-col gap-y-20">
         
         <div className="px-[10%]">
           <p>
@@ -19,10 +19,10 @@ export default function Home() {
 
         <div>
           <Image
-            src="https://placehold.co/800x600.png"
+            src="https://placehold.co/600x450.png"
             alt="A generic placeholder logo"
-            width={800}
-            height={600}
+            width={600}
+            height={450}
             className="w-full h-auto"
             data-ai-hint="logo placeholder"
           />
@@ -36,10 +36,10 @@ export default function Home() {
 
         <div>
           <Image
-            src="https://placehold.co/800x600.png"
+            src="https://placehold.co/600x450.png"
             alt="A generic placeholder logo"
-            width={800}
-            height={600}
+            width={600}
+            height={450}
             className="w-full h-auto"
             data-ai-hint="logo placeholder"
           />
