@@ -3,30 +3,31 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master # Change this if your main branch is different (e.g., main)
+      - master
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Add this line
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Or your desired Node.js version
+          node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build Next.js project
+      - name: Build
         run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs # Directory containing the static build output
-          publish_branch: gh-pages # Branch to deploy to
+          publish_dir: ./docs
