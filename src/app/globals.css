@@ -87,7 +87,16 @@ body {
   }
 }
 
-.text-block {
+.content-text {
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.text-block {
+}
+
+.credits-text {
+  font-size: 12px;
+  font-weight: normal; /* Default to normal weight */
+  text-align: center;
 }
