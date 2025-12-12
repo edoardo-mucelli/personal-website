@@ -1,6 +1,7 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   // Essential for static exports:
-  output: 'export', // ← Add this line (most important fix)
+  output: 'export',
   
   // Your existing configuration:
   typescript: {
@@ -10,7 +11,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    unoptimized: true, // ← This is correct for static exports
+    unoptimized: true, 
     remotePatterns: [
       {
         protocol: 'https',
@@ -25,4 +26,4 @@ const nextConfig = {
   trailingSlash: true, // Helps with static file routing
 };
 
-export default nextConfig;
+module.exports = nextConfig;
