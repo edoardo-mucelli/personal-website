@@ -58,28 +58,26 @@ export default function Home() {
         </div>
 
         <div className="text-block">
+          <p>
+            Formed as Industrial + Interaction Designer, I designed everything from bike frames to VR experiences and digital interfaces. Trained in <a href='https://www.design.unifi.it/'><u>Florence</u></a>, <a href='https://www.digitalinteractiondesign.polimi.it/'><u>Milan</u></a> and <a href='https://en.itu.dk/Programmes/MSc-Programmes/Digital-Design-and-Interactive-Technologies'><u>Copenhagen</u></a> with permanent grease stains from tinkering prototypes.
+          </p>
+        </div>
+
+        <div className="text-block">
           <p>Currently I am the Product Designer at <a href="https://www.alice.tech/" target="_blank" rel="noopener noreferrer"><u>Alice</u></a> (previously Alice.tech) shaping a more intelligent way for students to learn. 
 I mix high-level strategy with the CEO and hands-on prototyping. My job is owning the big picture to ensure we’re always innovating and shipping the best UX.</p>
         </div>
 
         <div className="media-hug-content w-full">
           <Image
-            src="https://picsum.photos/seed/alice/600/400"
+            src="/media/alice-logo.svg"
             alt="Alice company logo"
-            width={600}
-            height={400}
+            width={206}
+            height={58}
             className="h-auto mx-auto"
             data-ai-hint="logo placeholder"
           />
         </div>
-
-        <div className="text-block">
-          <p>
-            Formed as Industrial + Interaction Designer, I designed everything from bike frames to VR experiences and digital interfaces. Trained in <a href='https://www.design.unifi.it/'><u>Florence</u></a>, <a href='https://www.digitalinteractiondesign.polimi.it/'><u>Milan</u></a> and <a href='https://en.itu.dk/Programmes/MSc-Programmes/Digital-Design-and-Interactive-Technologies'><u>Copenhagen</u></a> with permanent grease stains from tinkering prototypes.
-          </p>
-        </div>
-
-
 
         <div className="media-hug-content w-full">
           <Image
