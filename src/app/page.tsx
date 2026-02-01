@@ -59,7 +59,20 @@ export default function Home() {
           />
         </div>
 
+        <div className="text-block">
+          <p>Now Product Designer at Alice (formerly Alice.tech). I spend my days reshaping how students study—prototyping new features and defining the product strategy alongside the CEO. My role is to maintain a complete overview of the ecosystem, pushing for constant innovation and obsessed with providing the best UX for our users.</p>
+        </div>
 
+        <div className="media-hug-content w-full">
+          <Image
+            src="https://picsum.photos/seed/alice/600/400"
+            alt="Alice company logo"
+            width={600}
+            height={400}
+            className="h-auto mx-auto"
+            data-ai-hint="logo placeholder"
+          />
+        </div>
 
         <div className="text-block">
           <p>
