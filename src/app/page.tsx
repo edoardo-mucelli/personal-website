@@ -60,7 +60,8 @@ export default function Home() {
         </div>
 
         <div className="text-block">
-          <p>Now Product Designer at Alice (formerly Alice.tech). I spend my days reshaping how students study—prototyping new features and defining the product strategy alongside the CEO. My role is to maintain a complete overview of the ecosystem, pushing for constant innovation and obsessed with providing the best UX for our users.</p>
+          <p>Currently I am the Product Designer at Alice (previously Alice.tech) shaping a more intelligent way for students to learn. 
+I mix high-level strategy with the CEO and hands-on prototyping. My job is owning the big picture to ensure we’re always innovating and shipping the best UX.</p>
         </div>
 
         <div className="media-hug-content w-full">
