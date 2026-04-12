@@ -3,10 +3,10 @@ import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <main className="min-h-screen py-20" role="main">
+    <main className="min-h-screen" role="main">
       <div className="w-4/5 max-w-[600px] mx-auto flex flex-col gap-y-20">
 
-        <div className="text-[12px] font-light px-[20%] mt-40 flex flex-col items-start gap-y-1">
+        <div className="text-[12px] font-light px-[20%] flex flex-col justify-center items-center gap-y-1 min-h-[100vh] min-h-[100svh] [padding-block:clamp(2rem,6vw,6rem)]">
            <Image
  src="/media/Memoji 1.png"
  alt="My Memoji"
@@ -15,35 +15,21 @@ export default function Home() {
  className="mb-2 h-auto" // float-left for left alignment, mr-4 for spacing
            />
           <p className="text-center">
-            Hi! This is my website, made with love for people interested on me.
-            Scrolling down there&apos;s my quick story but if you are here for
-            direct information, the buttons below will guide you to my Resume
-            and full case studies.
+            Hi! This is my website, made with love for people interested in me. Scroll down for my quick story.
           </p>
-        </div>
-
-        <div className="flex justify-center gap-4 mb-40">
-          <Button variant="outline" size="default" asChild aria-label="View Resume PDF">
- <a href="/media/Resume_Edoardo Mucelli.pdf" target="_blank" rel="noopener noreferrer">
-            Resume
- </a>
-          </Button>
-          <Button variant="outline" size="default" asChild aria-label="View Case Studies on Notion">
-            <a href="https://edoardomucelli.notion.site/Portfolio-content-manager-1a8c727fd3ff808ab12fe647e888e809?source=copy_link" target="_blank" rel="noopener noreferrer">
-              Case Studies</a></Button>
         </div>
 
 
         <div className="text-block">
           <p>
-            I am <a href='https://www.linkedin.com/in/edoardomucelli'><u>Edoardo Mucelli</u></a> an Interaction Designer curious about relationships and reactions between humans, objects, nature (even artificial entities).
+            I am <a href='https://www.linkedin.com/in/edoardomucelli'><u>Edoardo Mucelli</u></a>, an Interaction Designer curious about the relationships and reactions between humans, objects, and the systems they inhabit, including artificial ones.
           </p>
           <p>&nbsp;</p>
           <p>
-            Connecting the dots between different disciplines is the key to better design and the reason why I plan on being a generalist on my career as much as I can.
+            Connecting the dots between disciplines is the key to better design, and the reason I plan on staying a generalist as long as it keeps making my work sharper.
           </p>
           <p>&nbsp;</p>
-          <p>At heart, I consider myself a builder. I like to figure out how things work and make the best out of them.</p>
+          <p>I like experimenting with new tools and approaches, including how GenAI can be integrated meaningfully into a design process.</p>
         </div>
 
         <div className="media-hug-content w-full">
@@ -58,8 +44,7 @@ export default function Home() {
         </div>
 
         <div className="text-block">
-          <p>Currently I am the Product Designer at <a href="https://www.alice.tech/" target="_blank" rel="noopener noreferrer"><u>Alice</u></a> (previously Alice.tech) shaping a more intelligent way for students to learn. 
-I mix high-level strategy with the CEO and hands-on prototyping. My job is owning the big picture to ensure we’re always innovating and shipping the best UX.</p>
+          <p>Currently I am the UX & Product Designer at <a href="https://www.alice.tech/" target="_blank" rel="noopener noreferrer"><u>Alice</u></a>, shaping a more intelligent way for students to learn. I work across research, user flows, and product interface, and contribute to shaping the overall product direction together with the founding team.</p>
         </div>
 
         <div className="media-hug-content w-full">
@@ -75,7 +60,7 @@ I mix high-level strategy with the CEO and hands-on prototyping. My job is ownin
 
         <div className="text-block">
           <p>
-            Formed as Industrial + Interaction Designer, I designed everything from bike frames to VR experiences and digital interfaces. Trained in <a href='https://www.design.unifi.it/'><u>Florence</u></a>, <a href='https://www.digitalinteractiondesign.polimi.it/'><u>Milan</u></a> and <a href='https://en.itu.dk/Programmes/MSc-Programmes/Digital-Design-and-Interactive-Technologies'><u>Copenhagen</u></a> with permanent grease stains from tinkering prototypes.
+            Formed as an Industrial and Interaction Designer, I have designed everything from bike frames to VR experiences and digital interfaces. Trained in <a href='https://www.design.unifi.it/'><u>Florence</u></a>, <a href='https://www.digitalinteractiondesign.polimi.it/'><u>Milan</u></a> and <a href='https://en.itu.dk/Programmes/MSc-Programmes/Digital-Design-and-Interactive-Technologies'><u>Copenhagen</u></a>, with permanent grease stains from tinkering prototypes.
           </p>
         </div>
 
@@ -91,7 +76,7 @@ I mix high-level strategy with the CEO and hands-on prototyping. My job is ownin
         </div>
 
         <div className="text-block">
-          <p>I work where human and machine intelligence meet, designing interfaces that allow both to coexist, adapt, and incrementally improve together. No grand revolutions, just daily interactions where technology respects human rhythms as much as humans learn its language.</p>
+          <p>I work where human and machine intelligence meet, designing interfaces that allow both to coexist, adapt, and improve together. No grand revolutions, just daily interactions where technology respects human rhythms as much as humans learn its language.</p>
         </div>
 
 
@@ -111,7 +96,7 @@ I mix high-level strategy with the CEO and hands-on prototyping. My job is ownin
 
         <div className="text-block">
           <p>
-            I've gone deep in every phase: from user research and product discovery to testing complex interfaces. Shadowing real users, running interviews, then turning those insights into working systems. Built UI systems in Figma, prototyped interactions through in Unity VR, and yes, even wrestled Arduino into submission when needed with a bit of vibecoding and GenAI to boost my process.
+            I have gone deep in every phase: from user research and product discovery to testing complex interfaces. Shadowing real users, running interviews, then turning those insights into working systems. Built UI systems in Figma, prototyped interactions in Unity VR, and used GenAI to boost and accelerate my process along the way.
           </p>
         </div>
 
@@ -139,7 +124,7 @@ I mix high-level strategy with the CEO and hands-on prototyping. My job is ownin
 
         <div className="text-block">
           <p>
-            My goal is to explore interactions where humans and technology co-adapt. From prototyping AR interfaces to designing AI dialogues that feel less like commands, more like collaboration. My cross-disciplinary approach bridges theory and practice: currently researching natural interaction models for automotive contexts, while crafting data visualizations and prototypes that treat user and system as equal partners in the exchange.
+            My goal is to explore interactions where humans and technology co-adapt. From AI dialogues that feel less like commands and more like collaboration, to complex flows where the system needs to earn the user's trust by showing its reasoning, not just its output. My cross-disciplinary approach bridges theory and practice, treating user and system as equal partners in the exchange.
           </p>
         </div>
 
@@ -166,10 +151,9 @@ I mix high-level strategy with the CEO and hands-on prototyping. My job is ownin
 
 
         <div className="text-block">
-        <p> Between finishing my MSc thesis on Natural Interaction in automotive AI and prepping for publication, I'm actively exploring creative and research roles where I can apply my experience to real design challenges.</p>        
-        <p>&nbsp;</p>
           <p>
-          A special thanks to those I've collaborated with and mentors who've guided me along the way. Your perspectives have shaped how I see design.</p>
+            A special thanks to those I have collaborated with and the mentors who have guided me along the way. Your perspectives have shaped how I see design.
+          </p>
         </div>
 
 
@@ -188,15 +172,13 @@ I mix high-level strategy with the CEO and hands-on prototyping. My job is ownin
 
 
         <div className="text-block">
-        <p>You’ve probably noticed this site is a bit of a mix. I wanted to test the waters and see how I’d do (since vibe coding is everywhere anyway, why not embrace it?)</p>
+        <p>This site is a bit of a mix. Built in Next.js, styled with Tailwind, animated with GSAP, and with a bit of AI assistance to move faster.</p>
         </div>
 
         <div className="text-block credits-text">
           <p><strong>Figma</strong> for concept</p>
-          <p><strong>Firebase</strong> Studio as IDE</p>
-          <p><strong>DeepSeek</strong> as debug buddy</p>
-          <p><strong>GSAP</strong> for custom SVG animations</p>
-          <p><strong>Pixie.haus</strong> AI for the amazing character</p>
+          <p><strong>Antigravity</strong> as IDE</p>
+          <p>The amazing character by <a href="https://pixie.haus" target="_blank" rel="noopener noreferrer"><u>Pixie.haus</u></a></p>
         </div>
 
 
