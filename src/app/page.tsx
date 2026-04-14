@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import ScrollFadeAffordance from '@/components/ScrollFadeAffordance';
 
 export default function Home() {
   return (
@@ -17,22 +18,10 @@ export default function Home() {
           <p className="text-center">
             Hi! This is my website, made with love for people interested in me.
           </p>
-          <p className="absolute bottom-10 left-0 w-full text-center">
-            Scroll down for my quick story.
-          </p>
+          <div className="absolute bottom-10 left-0 w-full flex flex-col items-center justify-center text-inherit">
+            <ScrollFadeAffordance />
+          </div>
         </div>
-
-        <div className="flex justify-center gap-4 mb-40">
-          <Button variant="glass" size="default" asChild aria-label="View Resume PDF">
-            <a href="/media/Resume_Edoardo Mucelli.pdf" target="_blank" rel="noopener noreferrer">
-              Resume
-            </a>
-          </Button>
-          <Button variant="glass" size="default" asChild aria-label="View Case Studies on Notion">
-            <a href="https://edoardomucelli.notion.site/Portfolio-content-manager-1a8c727fd3ff808ab12fe647e888e809?source=copy_link" target="_blank" rel="noopener noreferrer">
-              Case Studies</a></Button>
-        </div>
-
 
         <div className="text-block">
           <p>
@@ -211,7 +200,7 @@ export default function Home() {
 
         <div className="text-block text-[10px] font-light text-right">
           <p>
-            2025 Edoardo Mucelli. All rights reserved.
+            2026 Edoardo Mucelli. All rights reserved.
           </p>
         </div>
 
