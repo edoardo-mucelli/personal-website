@@ -22,6 +22,17 @@ export default function Home() {
           </p>
         </div>
 
+        <div className="flex justify-center gap-4 mb-40">
+          <Button variant="glass" size="default" asChild aria-label="View Resume PDF">
+            <a href="/media/Resume_Edoardo Mucelli.pdf" target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>
+          </Button>
+          <Button variant="glass" size="default" asChild aria-label="View Case Studies on Notion">
+            <a href="https://edoardomucelli.notion.site/Portfolio-content-manager-1a8c727fd3ff808ab12fe647e888e809?source=copy_link" target="_blank" rel="noopener noreferrer">
+              Case Studies</a></Button>
+        </div>
+
 
         <div className="text-block">
           <p>
@@ -47,7 +58,7 @@ export default function Home() {
         </div>
 
         <div className="text-block">
-          <p>Currently I am the UX & Product Designer at <a href="https://www.alice.tech/" target="_blank" rel="noopener noreferrer"><u>Alice</u></a>, shaping a more intelligent way for students to learn. I work across research, user flows, and product interface, and contribute to shaping the overall product direction together with the founding team.</p>
+          <p>Currently I am the Product Designer at <a href="https://www.alice.tech/" target="_blank" rel="noopener noreferrer"><u>Alice</u></a> (previously Alice.tech) shaping a more intelligent way for students to learn. I mix high-level strategy with the CEO and hands-on prototyping. My job is owning the big picture to ensure we’re always innovating and shipping the best UX.</p>
         </div>
 
         <div className="media-hug-content w-full">
@@ -179,9 +190,10 @@ export default function Home() {
         </div>
 
         <div className="text-block credits-text">
-          <p><strong>Figma</strong> for concept</p>
-          <p><strong>Antigravity</strong> as IDE</p>
-          <p>The amazing character by <a href="https://pixie.haus" target="_blank" rel="noopener noreferrer"><u>Pixie.haus</u></a></p>
+          <p><strong>Firebase</strong> Studio as IDE</p>
+          <p><strong>DeepSeek</strong> as debug buddy</p>
+          <p><strong>GSAP</strong> for custom SVG animations</p>
+          <p><strong>Pixie.haus</strong> AI for the amazing character</p>
         </div>
 
 
