@@ -24,6 +24,7 @@ const nextConfig = {
 
   // Optional but recommended:
   trailingSlash: true, // Helps with static file routing
+  devIndicators: false,
 };
 
 module.exports = nextConfig;

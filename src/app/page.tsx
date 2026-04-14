@@ -6,16 +6,19 @@ export default function Home() {
     <main className="min-h-screen" role="main">
       <div className="w-4/5 max-w-[600px] mx-auto flex flex-col gap-y-20">
 
-        <div className="text-[12px] font-light px-[20%] flex flex-col justify-center items-center gap-y-1 min-h-[100vh] min-h-[100svh] [padding-block:clamp(2rem,6vw,6rem)]">
-           <Image
- src="/media/Memoji 1.png"
- alt="My Memoji"
- width={36} // Adjust based on desired size relative to text lines
- height={36} // Adjust based on desired size relative to text lines
- className="mb-2 h-auto" // float-left for left alignment, mr-4 for spacing
-           />
+        <div className="relative text-[12px] font-light px-[20%] flex flex-col justify-center items-center gap-y-1 min-h-[100vh] min-h-[100svh] [padding-block:clamp(2rem,6vw,6rem)]">
+          <Image
+            src="/media/Memoji 1.png"
+            alt="My Memoji"
+            width={36} // Adjust based on desired size relative to text lines
+            height={36} // Adjust based on desired size relative to text lines
+            className="mb-2 h-auto" // float-left for left alignment, mr-4 for spacing
+          />
           <p className="text-center">
-            Hi! This is my website, made with love for people interested in me. Scroll down for my quick story.
+            Hi! This is my website, made with love for people interested in me.
+          </p>
+          <p className="absolute bottom-10 left-0 w-full text-center">
+            Scroll down for my quick story.
           </p>
         </div>
 
@@ -113,9 +116,9 @@ export default function Home() {
             width={1280}  // Optional: ensures proper layout in Next.js
             height={720}
           >
-            <source 
-              src="/media/digital-interfaces-carousel.mp4" 
-              type="video/mp4" 
+            <source
+              src="/media/digital-interfaces-carousel.mp4"
+              type="video/mp4"
             />
           </video>
         </div>
@@ -141,9 +144,9 @@ export default function Home() {
             width={1280}  // Optional: ensures proper layout in Next.js
             height={720}
           >
-            <source 
-              src="/media/interaction-design-carousel.mp4" 
-              type="video/mp4" 
+            <source
+              src="/media/interaction-design-carousel.mp4"
+              type="video/mp4"
             />
           </video>
         </div>
@@ -172,7 +175,7 @@ export default function Home() {
 
 
         <div className="text-block">
-        <p>This site is a bit of a mix. Built in Next.js, styled with Tailwind, animated with GSAP, and with a bit of AI assistance to move faster.</p>
+          <p>This site is a bit of a mix. Built in Next.js, styled with Tailwind, animated with GSAP, and with a bit of AI assistance to move faster.</p>
         </div>
 
         <div className="text-block credits-text">
@@ -189,7 +192,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/edoardomucelli"><u>LinkedIn</u></a>
             &nbsp;&nbsp;&nbsp;&nbsp; {/* Adding spacing */}
             <a href="https://www.instagram.com/edoardomucelli/"><u>Instagram</u></a>
-            &nbsp;&nbsp;&nbsp;&nbsp; {/* Adding spacing */} 
+            &nbsp;&nbsp;&nbsp;&nbsp; {/* Adding spacing */}
             <a href="mailto:edoardomucelli@gmail.com"><u>Mail</u></a>
           </p>
         </div>
