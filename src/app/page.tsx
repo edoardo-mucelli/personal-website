@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import ScrollFadeAffordance from '@/components/ScrollFadeAffordance';
-
+import GSAPScrollReveal from '@/components/GSAPScrollReveal';
 export default function Home() {
   return (
-    <main className="min-h-screen" role="main">
-      <div className="w-4/5 max-w-[600px] mx-auto flex flex-col gap-y-20">
+    <main className="min-h-screen pb-[16px]" role="main">
+      <GSAPScrollReveal>
+        <div className="w-4/5 max-w-[600px] mx-auto flex flex-col gap-y-20">
 
         <div className="relative text-[12px] font-light px-[20%] flex flex-col justify-center items-center gap-y-1 min-h-[100vh] min-h-[100svh] [padding-block:clamp(2rem,6vw,6rem)]">
           <Image
@@ -187,7 +188,7 @@ export default function Home() {
 
 
 
-        <div className="text-block text-[12px]">
+        <div className="text-block text-[12px] footer-anim">
           <p>You can reach to me here :)</p>
           <p>
             <a href="https://www.linkedin.com/in/edoardomucelli"><u>LinkedIn</u></a>
@@ -198,13 +199,14 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="text-block text-[10px] font-light text-right">
+        <div className="text-block text-[10px] font-light text-right footer-anim">
           <p>
             2026 Edoardo Mucelli. All rights reserved.
           </p>
         </div>
 
-      </div>
+        </div>
+      </GSAPScrollReveal>
     </main>
   );
 }
