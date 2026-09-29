@@ -110,9 +110,3 @@ body, body * {
 [data-party-sentence] {
   color: var(--party-color, #ff58d6);
 }
-
-[data-party-artwork] > svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}

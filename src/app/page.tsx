@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import PartyParagraph from '@/components/PartyParagraph';
 import PartyColors from '@/components/PartyColors';
-import PartySvg from '@/components/PartySvg';
 import { Button } from '@/components/ui/button';
 import ScrollFadeAffordance from '@/components/ScrollFadeAffordance';
 import GSAPScrollReveal from '@/components/GSAPScrollReveal';
@@ -41,14 +40,17 @@ export default function Home() {
         </div>
 
         <div className="media-hug-content w-full">
-          <Image
-            src="/media/pixel-character.png"
-            alt="My Pixel art character"
-            width={128}
-            height={128}
-            className="h-auto mx-auto"
-            data-ai-hint="logo placeholder"
-          />
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcSet="/media/pixel-character.png" />
+            <img
+              src="/media/solder-loop/solder-loop.webp"
+              alt="Pixel art of me soldering at my workbench, with falling sparks"
+              width={128}
+              height={128}
+              className="h-auto mx-auto"
+              style={{ imageRendering: 'pixelated' }}
+            />
+          </picture>
         </div>
 
         <div className="text-block">
@@ -56,7 +58,7 @@ export default function Home() {
         </div>
 
         <div className="media-hug-content w-full">
-          <PartySvg
+          <Image
             src="/media/alice-logo.svg"
             alt="Alice company logo"
             width={206}
@@ -73,7 +75,7 @@ export default function Home() {
         </div>
 
         <div className="media-hug-content w-full">
-          <PartySvg
+          <Image
             src="/media/academic-logos.svg"
             alt="Logos of all universities Edoardo attended"
             width={306}
@@ -90,7 +92,7 @@ export default function Home() {
 
 
         <div className="media-hug-content">
-          <PartySvg
+          <Image
             src="/media/digital-humanism.svg"
             alt="Human hand and robot hand touching fingers like in the creation painting"
             width={220}
@@ -167,7 +169,7 @@ export default function Home() {
 
 
         <div className="media-hug-content">
-          <PartySvg
+          <Image
             src="/media/important-names.svg"
             alt="List of companies with which I've worked: EssilorLuxottica, Rayban Meta, Protezione Civile, Comune di Milano, EPFL + ECAL Lab"
             width={1873}
