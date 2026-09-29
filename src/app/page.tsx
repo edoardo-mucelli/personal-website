@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import PartyParagraph from '@/components/PartyParagraph';
 import PartyColors from '@/components/PartyColors';
+import PartySvg from '@/components/PartySvg';
 import { Button } from '@/components/ui/button';
 import ScrollFadeAffordance from '@/components/ScrollFadeAffordance';
 import GSAPScrollReveal from '@/components/GSAPScrollReveal';
@@ -55,7 +56,7 @@ export default function Home() {
         </div>
 
         <div className="media-hug-content w-full">
-          <Image
+          <PartySvg
             src="/media/alice-logo.svg"
             alt="Alice company logo"
             width={206}
@@ -72,7 +73,7 @@ export default function Home() {
         </div>
 
         <div className="media-hug-content w-full">
-          <Image
+          <PartySvg
             src="/media/academic-logos.svg"
             alt="Logos of all universities Edoardo attended"
             width={306}
@@ -89,7 +90,7 @@ export default function Home() {
 
 
         <div className="media-hug-content">
-          <Image
+          <PartySvg
             src="/media/digital-humanism.svg"
             alt="Human hand and robot hand touching fingers like in the creation painting"
             width={220}
@@ -166,7 +167,7 @@ export default function Home() {
 
 
         <div className="media-hug-content">
-          <Image
+          <PartySvg
             src="/media/important-names.svg"
             alt="List of companies with which I've worked: EssilorLuxottica, Rayban Meta, Protezione Civile, Comune di Milano, EPFL + ECAL Lab"
             width={1873}
