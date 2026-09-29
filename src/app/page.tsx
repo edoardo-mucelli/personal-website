@@ -1,10 +1,13 @@
 import Image from 'next/image';
+import PartyParagraph from '@/components/PartyParagraph';
+import PartyColors from '@/components/PartyColors';
 import { Button } from '@/components/ui/button';
 import ScrollFadeAffordance from '@/components/ScrollFadeAffordance';
 import GSAPScrollReveal from '@/components/GSAPScrollReveal';
 export default function Home() {
   return (
     <main className="min-h-screen pb-[16px]" role="main">
+      <PartyColors />
       <GSAPScrollReveal>
         <div className="w-4/5 max-w-[600px] mx-auto flex flex-col gap-y-20">
 
@@ -16,24 +19,24 @@ export default function Home() {
             height={36} // Adjust based on desired size relative to text lines
             className="mb-2 h-auto" // float-left for left alignment, mr-4 for spacing
           />
-          <p className="text-center">
+          <PartyParagraph className="text-center">
             Hi! This is my website, made with love for people interested in me.
-          </p>
+          </PartyParagraph>
           <div className="absolute bottom-10 left-0 w-full flex flex-col items-center justify-center text-inherit">
             <ScrollFadeAffordance />
           </div>
         </div>
 
         <div className="text-block">
-          <p>
+          <PartyParagraph>
             I am <a href='https://www.linkedin.com/in/edoardomucelli'><u>Edoardo Mucelli</u></a>, an Interaction Designer curious about the relationships and reactions between humans, objects, and the systems they inhabit, including artificial ones.
-          </p>
-          <p>&nbsp;</p>
-          <p>
+          </PartyParagraph>
+          <PartyParagraph>&nbsp;</PartyParagraph>
+          <PartyParagraph>
             Connecting the dots between disciplines is the key to better design, and the reason I plan on staying a generalist as long as it keeps making my work sharper.
-          </p>
-          <p>&nbsp;</p>
-          <p>I like experimenting with new tools and approaches, including how GenAI can be integrated meaningfully into a design process.</p>
+          </PartyParagraph>
+          <PartyParagraph>&nbsp;</PartyParagraph>
+          <PartyParagraph>I like experimenting with new tools and approaches, including how GenAI can be integrated meaningfully into a design process.</PartyParagraph>
         </div>
 
         <div className="media-hug-content w-full">
@@ -48,7 +51,7 @@ export default function Home() {
         </div>
 
         <div className="text-block">
-          <p>Currently I am the Product Designer at <a href="https://www.alice.tech/" target="_blank" rel="noopener noreferrer"><u>Alice</u></a> (previously Alice.tech) shaping a more intelligent way for students to learn. I mix high-level strategy with the CEO and hands-on prototyping. My job is owning the big picture to ensure we’re always innovating and shipping the best UX.</p>
+          <PartyParagraph>Currently I am the Product Designer at <a href="https://www.alice.tech/" target="_blank" rel="noopener noreferrer"><u>Alice</u></a> (previously Alice.tech) shaping a more intelligent way for students to learn. I mix high-level strategy with the CEO and hands-on prototyping. My job is owning the big picture to ensure we’re always innovating and shipping the best UX.</PartyParagraph>
         </div>
 
         <div className="media-hug-content w-full">
@@ -63,9 +66,9 @@ export default function Home() {
         </div>
 
         <div className="text-block">
-          <p>
+          <PartyParagraph>
             Formed as an Industrial and Interaction Designer, I have designed everything from bike frames to VR experiences and digital interfaces. Trained in <a href='https://www.design.unifi.it/'><u>Florence</u></a>, <a href='https://www.digitalinteractiondesign.polimi.it/'><u>Milan</u></a> and <a href='https://en.itu.dk/Programmes/MSc-Programmes/Digital-Design-and-Interactive-Technologies'><u>Copenhagen</u></a>, with permanent grease stains from tinkering prototypes.
-          </p>
+          </PartyParagraph>
         </div>
 
         <div className="media-hug-content w-full">
@@ -80,7 +83,7 @@ export default function Home() {
         </div>
 
         <div className="text-block">
-          <p>I work where human and machine intelligence meet, designing interfaces that allow both to coexist, adapt, and improve together. No grand revolutions, just daily interactions where technology respects human rhythms as much as humans learn its language.</p>
+          <PartyParagraph>I work where human and machine intelligence meet, designing interfaces that allow both to coexist, adapt, and improve together. No grand revolutions, just daily interactions where technology respects human rhythms as much as humans learn its language.</PartyParagraph>
         </div>
 
 
@@ -99,9 +102,9 @@ export default function Home() {
 
 
         <div className="text-block">
-          <p>
+          <PartyParagraph>
             I have gone deep in every phase: from user research and product discovery to testing complex interfaces. Shadowing real users, running interviews, then turning those insights into working systems. Built UI systems in Figma, prototyped interactions in Unity VR, and used GenAI to boost and accelerate my process along the way.
-          </p>
+          </PartyParagraph>
         </div>
 
 
@@ -127,9 +130,9 @@ export default function Home() {
 
 
         <div className="text-block">
-          <p>
+          <PartyParagraph>
             My goal is to explore interactions where humans and technology co-adapt. From AI dialogues that feel less like commands and more like collaboration, to complex flows where the system needs to earn the user's trust by showing its reasoning, not just its output. My cross-disciplinary approach bridges theory and practice, treating user and system as equal partners in the exchange.
-          </p>
+          </PartyParagraph>
         </div>
 
 
@@ -155,9 +158,9 @@ export default function Home() {
 
 
         <div className="text-block">
-          <p>
+          <PartyParagraph>
             A special thanks to those I have collaborated with and the mentors who have guided me along the way. Your perspectives have shaped how I see design.
-          </p>
+          </PartyParagraph>
         </div>
 
 
@@ -176,33 +179,33 @@ export default function Home() {
 
 
         <div className="text-block">
-          <p>This site is a bit of a mix. Built in Next.js, styled with Tailwind, animated with GSAP, and with a bit of AI assistance to move faster.</p>
+          <PartyParagraph>This site is a bit of a mix. Built in Next.js, styled with Tailwind, animated with GSAP, and with a bit of AI assistance to move faster.</PartyParagraph>
         </div>
 
         <div className="text-block credits-text">
-          <p><strong>Firebase</strong> Studio as IDE</p>
-          <p><strong>DeepSeek</strong> as debug buddy</p>
-          <p><strong>GSAP</strong> for custom SVG animations</p>
-          <p><strong>Pixie.haus</strong> AI for the amazing character</p>
+          <PartyParagraph><strong>Firebase</strong> Studio as IDE</PartyParagraph>
+          <PartyParagraph><strong>DeepSeek</strong> as debug buddy</PartyParagraph>
+          <PartyParagraph><strong>GSAP</strong> for custom SVG animations</PartyParagraph>
+          <PartyParagraph><strong>Pixie.haus</strong> AI for the amazing character</PartyParagraph>
         </div>
 
 
 
         <div className="text-block text-[12px] footer-anim">
-          <p>You can reach to me here :)</p>
-          <p>
+          <PartyParagraph>You can reach to me here :)</PartyParagraph>
+          <PartyParagraph>
             <a href="https://www.linkedin.com/in/edoardomucelli"><u>LinkedIn</u></a>
             &nbsp;&nbsp;&nbsp;&nbsp; {/* Adding spacing */}
             <a href="https://www.instagram.com/edoardomucelli/"><u>Instagram</u></a>
             &nbsp;&nbsp;&nbsp;&nbsp; {/* Adding spacing */}
             <a href="mailto:edoardomucelli@gmail.com"><u>Mail</u></a>
-          </p>
+          </PartyParagraph>
         </div>
 
         <div className="text-block text-[10px] font-light text-right footer-anim">
-          <p>
+          <PartyParagraph>
             2026 Edoardo Mucelli. All rights reserved.
-          </p>
+          </PartyParagraph>
         </div>
 
         </div>

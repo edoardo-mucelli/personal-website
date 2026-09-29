@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import PartyParagraph from './PartyParagraph';
 import { ChevronDown } from "lucide-react";
 import gsap from "gsap";
 
@@ -64,7 +65,7 @@ export default function ScrollFadeAffordance() {
       ref={affordanceRef} 
       className="flex flex-col items-center justify-center gap-1 mt-1 text-inherit will-change-[opacity,transform]"
     >
-      <p>Scroll down for my quick story.</p>
+      <PartyParagraph>Scroll down for my quick story.</PartyParagraph>
       <ChevronDown
         strokeWidth={1.5}
         className="w-5 h-5 text-inherit"

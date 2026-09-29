@@ -14,12 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="icon" href="/Tinkering.ico" sizes="any" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body font-light antialiased">{children}</body>
+      <body className="font-body font-bold antialiased">{children}</body>
     </html>
   );
 }

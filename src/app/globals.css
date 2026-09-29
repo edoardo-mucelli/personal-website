@@ -100,3 +100,13 @@ body {
   font-weight: normal; /* Default to normal weight */
   text-align: center;
 }
+
+/* This branch is a deliberately loud typography experiment. */
+body, body * {
+  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  font-weight: 700 !important;
+}
+
+[data-party-sentence] {
+  color: var(--party-color, #ff58d6);
+}
