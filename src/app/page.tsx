@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Workbench from '@/components/Workbench';
 import PartyParagraph from '@/components/PartyParagraph';
 import PartyColors from '@/components/PartyColors';
 import { Button } from '@/components/ui/button';
@@ -40,17 +41,7 @@ export default function Home() {
         </div>
 
         <div className="media-hug-content w-full">
-          <picture>
-            <source media="(prefers-reduced-motion: reduce)" srcSet="/media/pixel-character.png" />
-            <img
-              src="/media/solder-loop/solder-loop.webp"
-              alt="Pixel art of me soldering at my workbench, with falling sparks"
-              width={128}
-              height={128}
-              className="h-auto mx-auto"
-              style={{ imageRendering: 'pixelated' }}
-            />
-          </picture>
+          <Workbench />
         </div>
 
         <div className="text-block">
@@ -185,12 +176,6 @@ export default function Home() {
           <PartyParagraph>This site is a bit of a mix. Built in Next.js, styled with Tailwind, animated with GSAP, and with a bit of AI assistance to move faster.</PartyParagraph>
         </div>
 
-        <div className="text-block credits-text">
-          <PartyParagraph><strong>Firebase</strong> Studio as IDE</PartyParagraph>
-          <PartyParagraph><strong>DeepSeek</strong> as debug buddy</PartyParagraph>
-          <PartyParagraph><strong>GSAP</strong> for custom SVG animations</PartyParagraph>
-          <PartyParagraph><strong>Pixie.haus</strong> AI for the amazing character</PartyParagraph>
-        </div>
 
 
 

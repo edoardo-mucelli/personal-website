@@ -1,0 +1,363 @@
+{
+  "frameSize": [
+    192,
+    176
+  ],
+  "idle": 56,
+  "reaction": 23,
+  "walk": 8,
+  "chair": 8,
+  "source": "Nano Banana Pro 2K via Higgsfield website Unlimited",
+  "metrics": [
+    {
+      "scale": 0.12857,
+      "bounds": [
+        87,
+        48,
+        57,
+        100
+      ],
+      "faceHeight": 27.0
+    },
+    {
+      "scale": 0.106,
+      "bounds": [
+        92,
+        47,
+        51,
+        101
+      ],
+      "faceHeight": 26.82
+    },
+    {
+      "scale": 0.106,
+      "bounds": [
+        88,
+        47,
+        52,
+        101
+      ],
+      "faceHeight": 26.71
+    },
+    {
+      "scale": 0.106,
+      "bounds": [
+        89,
+        47,
+        52,
+        101
+      ],
+      "faceHeight": 26.71
+    },
+    {
+      "scale": 0.106,
+      "bounds": [
+        90,
+        47,
+        51,
+        101
+      ],
+      "faceHeight": 27.03
+    },
+    {
+      "scale": 0.106,
+      "bounds": [
+        89,
+        47,
+        49,
+        101
+      ],
+      "faceHeight": 28.94
+    },
+    {
+      "scale": 0.106,
+      "bounds": [
+        90,
+        47,
+        49,
+        101
+      ],
+      "faceHeight": 28.83
+    },
+    {
+      "scale": 0.106,
+      "bounds": [
+        95,
+        49,
+        45,
+        99
+      ],
+      "faceHeight": 27.67
+    },
+    {
+      "scale": 0.106,
+      "bounds": [
+        95,
+        49,
+        45,
+        99
+      ],
+      "faceHeight": 27.45
+    },
+    {
+      "scale": 0.11297,
+      "bounds": [
+        94,
+        47,
+        47,
+        101
+      ],
+      "faceHeight": 27.0
+    },
+    {
+      "scale": 0.11441,
+      "bounds": [
+        93,
+        52,
+        49,
+        96
+      ],
+      "faceHeight": 27.0
+    },
+    {
+      "scale": 0.1125,
+      "bounds": [
+        94,
+        50,
+        50,
+        98
+      ],
+      "faceHeight": 27.0
+    },
+    {
+      "scale": 0.11392,
+      "bounds": [
+        94,
+        42,
+        48,
+        106
+      ],
+      "faceHeight": 27.0
+    },
+    {
+      "scale": 0.11345,
+      "bounds": [
+        93,
+        43,
+        48,
+        105
+      ],
+      "faceHeight": 27.0
+    },
+    {
+      "scale": 0.11345,
+      "bounds": [
+        85,
+        43,
+        58,
+        105
+      ],
+      "faceHeight": 27.0
+    },
+    {
+      "scale": 0.11392,
+      "bounds": [
+        85,
+        41,
+        57,
+        107
+      ],
+      "faceHeight": 27.0
+    },
+    {
+      "scale": 0.11392,
+      "bounds": [
+        94,
+        41,
+        47,
+        107
+      ],
+      "faceHeight": 27.0
+    },
+    {
+      "scale": 0.111,
+      "bounds": [
+        94,
+        39,
+        46,
+        109
+      ],
+      "faceHeight": 27.2
+    },
+    {
+      "scale": 0.111,
+      "bounds": [
+        93,
+        41,
+        46,
+        107
+      ],
+      "faceHeight": 27.08
+    },
+    {
+      "scale": 0.111,
+      "bounds": [
+        93,
+        41,
+        45,
+        107
+      ],
+      "faceHeight": 26.08
+    },
+    {
+      "scale": 0.111,
+      "bounds": [
+        93,
+        41,
+        44,
+        107
+      ],
+      "faceHeight": 27.2
+    },
+    {
+      "scale": 0.111,
+      "bounds": [
+        93,
+        38,
+        44,
+        110
+      ],
+      "faceHeight": 24.86
+    },
+    {
+      "scale": 0.111,
+      "bounds": [
+        93,
+        37,
+        44,
+        111
+      ],
+      "faceHeight": 24.86
+    },
+    {
+      "scale": 0.111,
+      "bounds": [
+        92,
+        37,
+        42,
+        111
+      ],
+      "faceHeight": 26.97
+    },
+    {
+      "scale": 0.111,
+      "bounds": [
+        91,
+        37,
+        40,
+        111
+      ],
+      "faceHeight": 27.08
+    },
+    {
+      "scale": 0.10865,
+      "bounds": [
+        91,
+        40,
+        40,
+        108
+      ],
+      "faceHeight": 26.62
+    },
+    {
+      "scale": 0.10865,
+      "bounds": [
+        91,
+        40,
+        40,
+        108
+      ],
+      "faceHeight": 26.62
+    },
+    {
+      "scale": 0.10865,
+      "bounds": [
+        91,
+        40,
+        40,
+        108
+      ],
+      "faceHeight": 26.62
+    },
+    {
+      "scale": 0.10865,
+      "bounds": [
+        91,
+        40,
+        45,
+        108
+      ],
+      "faceHeight": 25.53
+    },
+    {
+      "scale": 0.10768,
+      "bounds": [
+        91,
+        40,
+        46,
+        108
+      ],
+      "faceHeight": 24.12
+    },
+    {
+      "scale": 0.10768,
+      "bounds": [
+        92,
+        40,
+        38,
+        108
+      ],
+      "faceHeight": 24.12
+    },
+    {
+      "scale": 0.10768,
+      "bounds": [
+        92,
+        40,
+        38,
+        108
+      ],
+      "faceHeight": 23.15
+    },
+    {
+      "scale": 0.10768,
+      "bounds": [
+        91,
+        40,
+        44,
+        108
+      ],
+      "faceHeight": 24.12
+    },
+    {
+      "scale": 0.20301,
+      "bounds": [
+        87,
+        51,
+        56,
+        97
+      ],
+      "faceHeight": 27.0
+    },
+    {
+      "scale": 0.20455,
+      "bounds": [
+        90,
+        51,
+        55,
+        97
+      ],
+      "faceHeight": 27.0
+    }
+  ]
+}

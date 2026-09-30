@@ -1,0 +1,33 @@
+{
+  "generator": "Higgsfield website, Nano Banana Pro, 2K, Unlimited on",
+  "generationInterface": "Computer Use in Zen",
+  "assets": {
+    "reaction": "347c9bdd-778f-4324-9e45-06fa0e66c3df",
+    "furniture": "ba384ff8-e83a-4aea-9b24-705132777581",
+    "look": "f6792b34-81cf-4b56-ab3f-889ca8e6703c",
+    "rise": "f5e7feab-f5be-4085-a3b7-f5616696e3e6",
+    "turn": "e804981a-5cf7-46ed-a860-a4fea7243edf",
+    "idle": "be1a0d67-40d9-47d7-9334-445ee08c9daa",
+    "chair": "d0dfbc7f-06da-4a4c-9df0-594d4cf73dd9",
+    "walk": "7d6c7db0-5087-4c8a-9ec6-1107618add80",
+    "walk-fixed": "18068dbb-18cb-4b11-9b34-facf3f553956",
+    "walk-cycle": "3eb8f2ef-0176-44d4-9389-852eaf42ef1e",
+    "walk-side": "4192601d-d446-4c5e-b597-a2dc23de1f6d"
+  },
+  "composition": "Python/Pillow; white-matte cleanup; uniform whole-body transforms only; fixed table and persistent tools; 56-frame idle derived from a stabilized generated pose and local hand motion. Sparks rendered as canvas particles.",
+  "selectedWalk": "walk-side, all 8 cells; previous walk trials retained as source only",
+  "clickTarget": "scene rectangle including table/chair and surrounding margin, per latest user request",
+  "billingVerification": {
+    "websiteGenerationsThisRun": 11,
+    "creditsSpent": 0,
+    "lastGenerationCreatedAt": "2026-09-30T20:06:56.100452Z",
+    "verifiedUsing": "Higgsfield transaction read; all 11 entries from 19:38:33 through 20:06:56 have credits 0"
+  },
+  "tablePlacementAdjustment": {
+    "x": 32,
+    "y": 11,
+    "reason": "Center the seated actor behind the tabletop and cover the legs per user feedback"
+  },
+  "chairOrientation": "Cells 6 and 7: back on screen right, seat facing table on lower-left; replaces incorrect cells 0 through 5.",
+  "armOcclusion": "Both complete glove and sleeve regions composited over tabletop in seated frames"
+}
