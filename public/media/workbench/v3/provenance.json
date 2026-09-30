@@ -29,5 +29,11 @@
     "reason": "Center the seated actor behind the tabletop and cover the legs per user feedback"
   },
   "chairOrientation": "Cells 6 and 7: back on screen right, seat facing table on lower-left; replaces incorrect cells 0 through 5.",
-  "armOcclusion": "Both complete glove and sleeve regions composited over tabletop in seated frames"
+  "armOcclusion": "Both complete glove and sleeve regions composited over tabletop in seated frames",
+  "tableScale": {
+    "factor": 1.05,
+    "anchor": "bottom-right of visible table bounds"
+  },
+  "mobileScale": 0.75,
+  "opticalShiftLeftLogicalPixels": 3
 }

@@ -75,6 +75,15 @@ TABLE_OFFSET=(32,11)
 def place_table(layer):
  out=blank();out.alpha_composite(layer,TABLE_OFFSET);return out
 table=place_table(table);table_after=place_table(table_after)
+# Grow both table layers around the same bottom-right corner in screen space.
+TABLE_SCALE=1.05
+table_bounds=table.getbbox()
+def scale_table(layer):
+ left,top,right,bottom=table_bounds
+ tile=layer.crop(table_bounds)
+ tile=tile.resize((round(tile.width*TABLE_SCALE),round(tile.height*TABLE_SCALE)),N)
+ out=blank();out.alpha_composite(tile,(right-tile.width,bottom-tile.height));return out
+table=scale_table(table);table_after=scale_table(table_after)
 chairposes=[chair]*8
 if (SRC/'chair.png').exists():
  chaircells=cells('chair',4,3)

@@ -4,8 +4,8 @@ import { useEffect, useRef } from 'react';
 
 const REACTION_DURATIONS = [100, 120, 120, 110, 110, 110, 140, 140, 500, ...Array(8).fill(120), ...Array(6).fill(120)];
 const REACTION_MS = REACTION_DURATIONS.reduce((a, b) => a + b, 0);
-// Center the visible idle silhouette (x=57..156), excluding transparent padding.
-const SCENE_CENTER_X = (57 + 156) / 2;
+// Optical correction: shift the scene slightly left of its former alignment.
+const SCENE_CENTER_X = (57 + 156) / 2 + 3;
 function reactionFrame(elapsed: number) {
   let end = 0;
   for (let i = 0; i < REACTION_DURATIONS.length; i++) {
@@ -82,9 +82,11 @@ export default function Workbench() {
       if (alive && phase !== 'gone' && !(reduced.matches && phase === 'idle')) raf = requestAnimationFrame(tick);
     };
     const resize = () => {
-      width = canvas.getBoundingClientRect().width; scale = 2; origin = Math.round(width / scale / 2 - SCENE_CENTER_X);
+      width = canvas.getBoundingClientRect().width;
+      scale = matchMedia('(max-width: 767px)').matches ? 1.5 : 2;
+      origin = Math.round(width / scale / 2 - SCENE_CENTER_X);
       const dpr = window.devicePixelRatio || 1;
-      canvas.width = Math.round(width * dpr); canvas.height = Math.round(352 * dpr);
+      canvas.width = Math.round(width * dpr); canvas.height = Math.round(176 * scale * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0); draw(performance.now());
     };
     const isScene = (e: PointerEvent | MouseEvent) => {
@@ -107,7 +109,7 @@ export default function Workbench() {
     canvas.addEventListener('click', click); canvas.addEventListener('pointermove', move); canvas.addEventListener('keydown', key);
     window.addEventListener('resize', resize); reduced.addEventListener('change', motionChange);
     Promise.all(['idle', 'reaction', 'walk', 'chairRest', 'table', 'empty'].map(async name => {
-      const im = new Image(); im.src = `/media/workbench/v3/${name === 'chairRest' ? 'chair-rest' : name}.png?revision=6`; await im.decode(); images[name] = im;
+      const im = new Image(); im.src = `/media/workbench/v3/${name === 'chairRest' ? 'chair-rest' : name}.png?revision=7`; await im.decode(); images[name] = im;
     })).then(() => {
       if (!alive) return;
       setPhase('idle'); start = performance.now(); idleEpoch = start; resize(); raf = requestAnimationFrame(tick);
@@ -117,7 +119,7 @@ export default function Workbench() {
       canvas.removeEventListener('click', click); canvas.removeEventListener('pointermove', move); canvas.removeEventListener('keydown', key);
     };
   }, []);
-  return <div id="workbench" style={{ height: 352, position: 'relative' }}>
-    <canvas ref={ref} role="button" tabIndex={0} data-state="loading" aria-label="Edoardo soldering at his workbench" style={{ width: '100vw', height: 352, position: 'absolute', left: 'calc(50% - 50vw)', imageRendering: 'pixelated', touchAction: 'pan-y' }} />
+  return <div id="workbench" className="relative h-[264px] md:h-[352px]">
+    <canvas ref={ref} role="button" tabIndex={0} data-state="loading" aria-label="Edoardo soldering at his workbench" style={{ width: '100vw', height: '100%', position: 'absolute', left: 'calc(50% - 50vw)', imageRendering: 'pixelated', touchAction: 'pan-y' }} />
   </div>;
 }
