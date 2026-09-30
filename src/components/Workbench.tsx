@@ -28,7 +28,13 @@ export default function Workbench() {
     let idleEpoch = 0, emissionEnd = Infinity;
     const setPhase = (value: string) => {
       phase = value; canvas.dataset.state = value;
-      if (value === 'gone') canvas.dataset.frame = 'empty';
+      if (value === 'gone') {
+        cancelAnimationFrame(raf); raf = 0;
+        canvas.dataset.frame = 'empty';
+        canvas.removeEventListener('click', click);
+        canvas.removeEventListener('pointermove', move);
+        canvas.removeEventListener('keydown', key);
+      }
       canvas.tabIndex = value === 'idle' ? 0 : -1;
       canvas.setAttribute('role', value === 'idle' ? 'button' : 'img');
       canvas.setAttribute('aria-label', value === 'gone' ? 'Workbench with chair pushed back' : 'Edoardo soldering at his workbench');
@@ -78,7 +84,9 @@ export default function Workbench() {
       ctx.restore();
     };
     const tick = (time: number) => {
-      raf = 0; draw(time);
+      raf = 0;
+      if (!alive || phase === 'gone') return;
+      draw(time);
       if (alive && phase !== 'gone' && !(reduced.matches && phase === 'idle')) raf = requestAnimationFrame(tick);
     };
     const resize = () => {
