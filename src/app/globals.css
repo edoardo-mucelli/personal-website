@@ -101,9 +101,17 @@ body {
   text-align: center;
 }
 
-/* This branch is a deliberately loud typography experiment. */
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/fonts/opendyslexic/OpenDyslexic-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Keep the existing bold, colorful typography with a self-hosted font. */
 body, body * {
-  font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  font-family: "OpenDyslexic", sans-serif !important;
   font-weight: 700 !important;
 }
 
