@@ -20,7 +20,7 @@ export default function Home() {
             height={36} // Adjust based on desired size relative to text lines
             className="mb-2 h-auto" // float-left for left alignment, mr-4 for spacing
           />
-          <PartyParagraph className="text-center">
+          <PartyParagraph className="text-center text-base w-full md:w-4/5 [text-wrap:balance]">
             Hi! This is my website, made with love for people interested in me.
           </PartyParagraph>
           <div className="absolute bottom-10 left-0 w-full flex flex-col items-center justify-center text-inherit">
